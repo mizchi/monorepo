@@ -16,8 +16,16 @@ My monorepo boilerplate.
 ```bash
 # git clone <this> && cd <here>
 $ pnpm install
-# check generator 
+$ pnpm build
+$ pnpm test
+$ pnpm typecheck
+$ pnpm format
+$ pnpm format:check # run on ci
+```
 
+## Generators
+
+```bash
 # npm package
 $ pnpm gen lib --args mylib #=> packages/mylib
 # React lib packages
@@ -28,14 +36,8 @@ $ pnpm gen cli --args mycli #=> packages/mycli
 $ pnpm gen react --args myapp #=> apps/myapp
 # Vite / React / PandaCSS / RadixUI
 $ pnpm gen panda --args mypanda #=> apps/myapp
-
 # Generate Cloudflare Worker
 $ pnpm gen cf-worker --args myworker #=> apps/myworker
-
-$ pnpm install
-$ pnpm build
-$ pnpm test
-$ pnpm typecheck
 ```
 
 ## Edit template

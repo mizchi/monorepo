@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "myreactlib",
+  "name": "react",
   "version": "0.0.1",
   "type": "module",
   "scripts": {

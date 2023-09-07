@@ -39,7 +39,7 @@ importers:
         specifier: ^7.2.3
         version: 7.2.3
 
-  apps/myworker:
+  apps/cf-worker:
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20230904.0
@@ -51,7 +51,7 @@ importers:
         specifier: ^3.7.0
         version: 3.7.0
 
-  apps/panda-app:
+  apps/panda:
     dependencies:
       '@types/react':
         specifier: ^18.2.21
@@ -73,7 +73,7 @@ importers:
         specifier: ^1.0.6
         version: 1.0.6(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
 
-  apps/react-app:
+  apps/react:
     dependencies:
       '@types/react':
         specifier: ^18.2.21
@@ -88,11 +88,11 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
 
-  packages/mycli: {}
+  packages/cli: {}
 
-  packages/mylib: {}
+  packages/lib: {}
 
-  packages/myreactlib:
+  packages/react-lib:
     dependencies:
       '@types/react':
         specifier: ^18.2.21
@@ -114,7 +114,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.9
+      '@jridgewell/trace-mapping': 0.3.19
     dev: true
 
   /@ark-ui/react@0.9.0(@internationalized/date@3.4.0)(react-dom@18.2.0)(react@18.2.0):

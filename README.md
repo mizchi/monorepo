@@ -22,7 +22,7 @@ $ pnpm build
 $ pnpm test
 $ pnpm typecheck
 $ pnpm format
-$ pnpm format:check # run on ci
+$ pnpm check # biome check on ci
 ```
 
 ## Generators

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "myworker",
+  "name": "cf-worker",
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",

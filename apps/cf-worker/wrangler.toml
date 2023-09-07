@@ -1,5 +1,5 @@
 compatibility_date = "2023-09-07"
-name = "myworker"
+name = "cf-worker"
 main = "src/worker.ts"
 
 # [[d1_databases]]

@@ -1,23 +1,18 @@
 {
   "private": true,
-  "name": "mycli",
+  "name": "lib",
   "version": "0.0.1",
   "type": "module",
+  "main": "dist/index.cjs",
   "module": "dist/index.mjs",
-  "types": "dist/index.d.mts",
-  "bin": {
-    "mycli": "./dist/index.mjs"
-  },
+  "types": "dist-types/index.d.ts",
   "scripts": {
-    "dev": "pnpm tsc && node dist/index.mjs",
-    "build": "pnpm tsc",
+    "build": "pnpm build:vite && pnpm build:types",
+    "build:vite": "vite build",
+    "build:types": "tsc -p tsconfig.build.json --noEmit false",
     "test": "vitest --run src",
     "typecheck": "tsc --noEmit"
   },
-  "files": [
-    "dist",
-    "src"
-  ],
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
@@ -25,8 +20,12 @@
       "types": "./dist-types/index.d.ts"
     }
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "repository": {
     "type": "git",
-    "directory": "packages/mycli"
+    "directory": "packages/lib"
   }
 }

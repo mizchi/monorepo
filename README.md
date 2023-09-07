@@ -1,4 +1,4 @@
-# Monorepo template
+# Monorepo
 
 My monorepo boilerplate.
 

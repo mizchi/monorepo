@@ -3,11 +3,11 @@
     "enabled": true,
     "indentSize": 2,
     "indentStyle": "space",
-    "ignore": ["node_modules/**", "dist/**", ".turbo/**"]
+    "ignore": ["node_modules/**", "dist/**", ".turbo/**", "styled-system/**"]
   },
   "linter": {
     "enabled": true,
-    "ignore": ["node_modules/**", "dist/**", ".turbo/**"],
+    "ignore": ["node_modules/**", "dist/**", ".turbo/**", "styled-system/**"],
     "rules": {
       "recommended": true,
       "style": {

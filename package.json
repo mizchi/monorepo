@@ -3,7 +3,7 @@
   "packageManager": "pnpm@8.7.4",
   "scripts": {
     "format": "biome format . --write",
-    "format:check": "biome format .",
+    "check": "biome check .",
     "test": "turbo test",
     "build": "turbo build",
     "gen": "turbo gen",

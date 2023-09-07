@@ -15,6 +15,8 @@ My monorepo boilerplate.
 
 ```bash
 # git clone <this> && cd <here>
+$ rm -r apps packages # clean for your use
+
 $ pnpm install
 $ pnpm build
 $ pnpm test

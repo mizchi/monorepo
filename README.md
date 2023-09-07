@@ -29,10 +29,28 @@ $ pnpm check # biome check on ci
 
 ## Use pkg with `turbo gen workspace`
 
-workspace dependencies
+Add dependencies
 
 ```bash
 pnpm add vite vitest typescript -Dw
+```
+
+Put `tsconfig.base.jon`
+
+```json
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "NodeNext",
+    "allowJs": true,
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["vitest/importMeta"]
+  }
+}
 ```
 
 ### Npm module

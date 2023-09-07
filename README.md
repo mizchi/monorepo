@@ -56,37 +56,37 @@ Put `tsconfig.base.jon`
 ### Npm module
 
 ```bash
-npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/packages/lib-base
+npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/packages/lib-base --type package --name lib --destination=packages/lib
 ```
 
 ### React Library
 
 ```bash
-npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/packages/react-lib-base
+npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/packages/react-lib-base --type package --name react-lib --destination=packages/react-lib
 ```
 
 ### Cli
 
 ```bash
-npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/packages/cli-base
+npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/packages/cli-base --type package --name cli --destination=packages/cli
 ```
 
 ### React App
 
 ```bash
-npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/apps/react-base
+npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/apps/react-base --type app --name react-app --destination=apps/react-app
 ```
 
 ### React Panda Radix App
 
 ```bash
-npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/apps/panda-base
+npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/apps/panda-base --type app --name panda-app --destination=apps/panda-app
 ```
 
 ### Cloudflare Workers App
 
 ```bash
-npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/apps/cf-workers-base
+npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/apps/cf-workers-base --type app --name cf-worker --destination=apps/cf-worker
 ```
 
 ## LICENSE

@@ -1,0 +1,18 @@
+{
+  "formatter": {
+    "enabled": true,
+    "indentSize": 2,
+    "indentStyle": "space",
+    "ignore": ["node_modules/**", "dist/**", ".turbo/**"]
+  },
+  "linter": {
+    "enabled": true,
+    "ignore": ["node_modules/**", "dist/**", ".turbo/**"],
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noNonNullAssertion": "off"
+      }
+    }
+  }
+}

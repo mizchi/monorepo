@@ -22,7 +22,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         base: "templates/lib",
         templateFiles: "templates/lib/**/*",
         stripExtensions: ["hbs"],
-        verbose: true,
+        globOptions: { dot: true },
       },
     ],
   });
@@ -36,7 +36,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         base: "templates/cli",
         templateFiles: "templates/cli/**/*",
         stripExtensions: ["hbs"],
-        verbose: true,
+        globOptions: { dot: true },
       },
     ],
   });
@@ -50,7 +50,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         base: "templates/react",
         templateFiles: "templates/react/**/*",
         stripExtensions: ["hbs"],
-        verbose: true,
+        globOptions: { dot: true },
       },
     ],
   });
@@ -64,11 +64,10 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         base: "templates/react-lib",
         templateFiles: "templates/react-lib/**/*",
         stripExtensions: ["hbs"],
-        verbose: true,
+        globOptions: { dot: true },
       },
     ],
   });
-
   plop.setGenerator("cf-worker", {
     description: "Generator cf-worker app",
     prompts: [pkgNamePrompt],
@@ -79,7 +78,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         base: "templates/cf-worker",
         templateFiles: "templates/cf-worker/**/*",
         stripExtensions: ["hbs"],
-        verbose: true,
+        globOptions: { dot: true },
       },
     ],
   });
@@ -94,7 +93,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         base: "templates/panda",
         templateFiles: "templates/panda/**/*",
         stripExtensions: ["hbs"],
-        verbose: true,
+        globOptions: { dot: true },
       },
     ],
   });

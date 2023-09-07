@@ -39,7 +39,7 @@ importers:
         specifier: ^7.2.3
         version: 7.2.3
 
-  apps/cf-worker:
+  apps/cf-worker-base:
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20230904.0
@@ -51,7 +51,7 @@ importers:
         specifier: ^3.7.0
         version: 3.7.0
 
-  apps/panda:
+  apps/panda-base:
     dependencies:
       '@types/react':
         specifier: ^18.2.21
@@ -73,7 +73,7 @@ importers:
         specifier: ^1.0.6
         version: 1.0.6(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
 
-  apps/react:
+  apps/react-base:
     dependencies:
       '@types/react':
         specifier: ^18.2.21
@@ -88,11 +88,11 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
 
-  packages/cli: {}
+  packages/cli-base: {}
 
-  packages/lib: {}
+  packages/lib-base: {}
 
-  packages/react-lib:
+  packages/react-lib-base:
     dependencies:
       '@types/react':
         specifier: ^18.2.21

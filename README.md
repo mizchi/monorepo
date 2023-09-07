@@ -11,13 +11,15 @@ My monorepo boilerplate.
 - biome
 - react
 
-## How to use
+## Use as monorepo base
 
 ```bash
-# git clone <this> && cd <here>
-$ rm -r apps packages # clean for your use
-
+$ git clone https://github.com/mizchi/monorepo
+# cd <here>
+$ rm -r apps packages
 $ pnpm install
+
+## Tasks
 $ pnpm build
 $ pnpm test
 $ pnpm typecheck
@@ -25,35 +27,48 @@ $ pnpm format
 $ pnpm check # biome check on ci
 ```
 
-## Generators
+## Use pkg with `turbo gen workspace`
+
+workspace dependencies
 
 ```bash
-# npm package
-$ pnpm gen lib --args mylib #=> packages/mylib
-# React lib packages
-$ pnpm gen react-lib --args myreactlib #=> packages/myreactlib
-# CLI package
-$ pnpm gen cli --args mycli #=> packages/mycli
-# Vite React App
-$ pnpm gen react --args myapp #=> apps/myapp
-# Vite / React / PandaCSS / RadixUI
-$ pnpm gen panda --args mypanda #=> apps/myapp
-# Generate Cloudflare Worker
-$ pnpm gen cf-worker --args myworker #=> apps/myworker
+pnpm add vite vitest typescript -Dw
 ```
 
-## Edit template
-
-See `turbo/generators/templates/{generatorName}`
-
-## How to contributes
-
-Add your template under `turbo/generators/templates` and edit `turbo/generators/config.ts`.
-
-Run generators itself.
+### Npm module
 
 ```bash
-$ pnpm zx script/test-gen.mjs
+npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/packages/lib-base
+```
+
+### React Library
+
+```bash
+npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/packages/react-lib-base
+```
+
+### Cli
+
+```bash
+npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/packages/cli-base
+```
+
+### React App
+
+```bash
+npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/apps/react-base
+```
+
+### React Panda Radix App
+
+```bash
+npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/apps/panda-base
+```
+
+### Cloudflare Workers App
+
+```bash
+npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/apps/cf-workers-base
 ```
 
 ## LICENSE

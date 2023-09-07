@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-npx turbo gen workspace --copy https://github.com/mizchi/monorepo/tree/main/$1

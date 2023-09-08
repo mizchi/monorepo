@@ -100,3 +100,5 @@ dist
 
 dist-types
 .turbo
+_compiled
+styled-system

@@ -14,7 +14,7 @@
     "publish": "dotenv -e .env pnpm vsce publish --no-dependencies",
     "test": "pnpm test:vitest && pnpm test:vscode",
     "test:vitest": "vitest src --run",
-    "test:vscode": "pnpm tsc -p tsconfig.test.json && node _compiled/test/run.cjs"
+    "test:vscode": "pnpm tsc -p tsconfig.test.json && NODE_ENV=development node _compiled/test/run.cjs"
   },
   "activationEvents": [],
   "contributes": {

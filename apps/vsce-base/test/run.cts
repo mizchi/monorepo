@@ -11,6 +11,9 @@ runTests({
   version: "insiders",
   extensionDevelopmentPath,
   extensionTestsPath,
+  extensionTestsEnv: {
+    NODE_ENV: "development",
+  },
   launchArgs: ["--disable-extensions", testWorkspace],
 }).catch((error) => {
   console.error("Failed to run tests", error);

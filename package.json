@@ -2,7 +2,8 @@
   "private": true,
   "packageManager": "pnpm@8.7.4",
   "scripts": {
-    "format": "biome format . --write",
+    "format": "biome format . --write && pnpm check . --apply",
+    "format:unsafe": "biome format . --write && pnpm check . --apply-unsafe",
     "check": "biome check .",
     "test": "turbo test",
     "build": "turbo build",

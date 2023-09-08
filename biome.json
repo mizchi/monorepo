@@ -3,11 +3,25 @@
     "enabled": true,
     "indentSize": 2,
     "indentStyle": "space",
-    "ignore": ["node_modules/**", "dist/**", ".turbo/**", "styled-system/**"]
+    "ignore": [
+      "node_modules/**",
+      "dist/**",
+      ".turbo/**",
+      "styled-system/**",
+      ".vscode-test/**",
+      "_compiled/**"
+    ]
   },
   "linter": {
     "enabled": true,
-    "ignore": ["node_modules/**", "dist/**", ".turbo/**", "styled-system/**"],
+    "ignore": [
+      "node_modules/**",
+      "dist/**",
+      ".turbo/**",
+      "styled-system/**",
+      ".vscode-test/**",
+      "_compiled/**"
+    ],
     "rules": {
       "recommended": true,
       "suspicious": {

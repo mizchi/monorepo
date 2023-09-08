@@ -12,5 +12,5 @@
     "outDir": "_compiled",
     "skipLibCheck": true
   },
-  "include": ["src", "src/test/**/*.test.ts"]
+  "include": ["src", "test"]
 }

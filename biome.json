@@ -10,6 +10,9 @@
     "ignore": ["node_modules/**", "dist/**", ".turbo/**", "styled-system/**"],
     "rules": {
       "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "off"
+      },
       "style": {
         "noNonNullAssertion": "off"
       }

@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "types": ["mocha"],
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": false,
+    "rootDirs": ["src", "test"],
+    "outDir": "_compiled",
+    "skipLibCheck": true
+  },
+  "include": ["src", "src/test/**/*.test.ts"]
+}

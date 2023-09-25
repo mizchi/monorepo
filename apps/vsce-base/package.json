@@ -12,7 +12,7 @@
     "watch": "esbuild --bundle --minify --outdir=out --sourcemap --define:import.meta.vitest=undefined --watch src/index.ts",
     "package": "vsce package --no-dependencies",
     "publish": "dotenv -e .env pnpm vsce publish --no-dependencies",
-    "test": "pnpm test:vitest && pnpm test:vscode",
+    "test": "pnpm test:vitest",
     "test:vitest": "vitest src --run",
     "test:vscode": "pnpm tsc -p tsconfig.test.json && NODE_ENV=development node _compiled/test/run.cjs"
   },

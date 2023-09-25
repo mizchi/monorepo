@@ -1,5 +1,7 @@
 {
   "private": true,
+  "author": "mizchi",
+  "license": "MIT",
   "scripts": {
     "format": "biome format . --write && biome check . --apply",
     "format:unsafe": "biome format . --write && biome check . --apply-unsafe",
@@ -10,11 +12,6 @@
     "typecheck": "turbo typecheck",
     "test:ci": "turbo build test typecheck"
   },
-  "keywords": [
-    "monorepo"
-  ],
-  "author": "mizchi",
-  "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "^1.1.2",
     "@turbo/gen": "^1.10.13",

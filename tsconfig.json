@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "ESNext",
+    "module": "NodeNext",
     "allowJs": true,
     "resolveJsonModule": true,
+    "noEmit": true,
     "moduleResolution": "NodeNext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -11,5 +12,5 @@
     "skipLibCheck": true,
     "types": ["vitest/importMeta"]
   },
-  "exclude": ["turbo/generators"]
+  "exclude": ["scripts"]
 }

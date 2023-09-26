@@ -1,5 +1,6 @@
 {
   "editor.formatOnSave": true,
+  "deno.enablePaths": ["./script"],
   "editor.codeActionsOnSave": {
     "quickFix.biome": true,
     "source.organizeImports.biome": true

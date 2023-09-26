@@ -2,19 +2,18 @@
   "private": true,
   "author": "mizchi",
   "license": "MIT",
+  "packageManager": "pnpm@8.6.12",
   "scripts": {
     "format": "biome format . --write && biome check . --apply",
     "format:unsafe": "biome format . --write && biome check . --apply-unsafe",
     "check": "biome check .",
     "test": "turbo test",
     "build": "turbo build",
-    "gen": "turbo gen",
     "typecheck": "turbo typecheck",
     "test:ci": "turbo build test typecheck"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.1.2",
-    "@turbo/gen": "^1.10.13",
     "@types/node": "^20.5.9",
     "npm-run-all": "^4.1.5",
     "ts-node": "^10.9.1",

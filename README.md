@@ -5,7 +5,6 @@ My monorepo boilerplate.
 ## Stack
 
 - turborepo
-- @turbo/gen
 - typescript
 - vite/vitest
 - biome

@@ -11,6 +11,6 @@ if (import.meta.vitest) {
   const { test, expect } = import.meta.vitest;
   const { renderToString } = await import("react-dom/server");
   test("render", () => {
-    expect(renderToString(<App />)).toBe("<h1>Hello react</h1>");
+    expect(renderToString(<App />)).contain("Hello react+tailwind");
   });
 }

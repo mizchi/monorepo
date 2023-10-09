@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "react-base",
+  "name": "react-tw-base",
   "version": "0.0.1",
   "type": "module",
   "scripts": {

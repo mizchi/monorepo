@@ -28,11 +28,31 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Grid, GridItem, SubGrid } from "./layout";
 
 export default function App() {
   return (
     <>
-      <h1>Hello shadcn-ui</h1>
+      <Grid
+        rows={["32px", "1fr", "1fr", "1fr", "1fr"]}
+        columns={5}
+        style={{ width: "30vw", height: "30vh", gap: "10px" }}
+      >
+        <GridItem area={[0, 0, 5, 1]} style={{ backgroundColor: "wheat" }}>
+          header
+        </GridItem>
+        <SubGrid area={[1, 1, 4, 4]} style={{ backgroundColor: "#ddd" }}>
+          <GridItem area={[0, 0, 1, 1]} style={{ backgroundColor: "wheat" }}>
+            0-0/1-1
+          </GridItem>
+          <GridItem area={[1, 1, 2, 2]} style={{ backgroundColor: "wheat" }}>
+            1-1/2-2
+          </GridItem>
+        </SubGrid>
+      </Grid>
+
+      <hr />
+
       {/* card */}
       <Card>
         <CardHeader>
@@ -55,7 +75,11 @@ export default function App() {
         </CardHeader>
         <CardContent>
           <AlertDialog>
-            <AlertDialogTrigger>Open</AlertDialogTrigger>
+            <AlertDialogTrigger>
+              <div className="bg-primary text-primary-foreground hover:bg-primary/90 rounded px-4 pl-4 pt-2 pb-2">
+                Open
+              </div>
+            </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
                 <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
